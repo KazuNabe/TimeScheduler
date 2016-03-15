@@ -9,6 +9,21 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>ReactiveFoundation.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ReactiveUIKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +37,32 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3F327574FA3CF3022B77B96B3772F207</key>
+		<key>3FD63D81D90D3AEDACFA4CB2D7811369</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43280EA3CE546C6971EFC699FA81828D</key>
+		<key>88AA764841D2F67C6FA2EF18381B3A08</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>90F5CA4FA61E6468F062A3528A930848</key>
+		<key>AA2D4F221190337FEC4AE61CD74AEA97</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B34E4D86A28C38B0EAA5BDBC58853879</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C85A745F6432BB3AEBDFECAD813DEC5A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>FD84BBD20EB6C17F7DB654937DC1607F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
