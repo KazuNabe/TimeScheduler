@@ -18,6 +18,7 @@
 		E59D3B5C1C9859E800A7A740 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B5B1C9859E800A7A740 /* Schedule.swift */; };
 		E59D3B5E1C985A8800A7A740 /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B5D1C985A8800A7A740 /* UserSetting.swift */; };
 		E59D3B621C98607500A7A740 /* ScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B611C98607500A7A740 /* ScheduleScreen.swift */; };
+		E59D3B651C986C2700A7A740 /* TimeSchedulerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B641C986C2700A7A740 /* TimeSchedulerContext.swift */; };
 		F35D9C0C0383689B9610CD31 /* Pods_TimeScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1D4066194D73E75BF07817 /* Pods_TimeScheduler.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +39,7 @@
 		E59D3B5B1C9859E800A7A740 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Souces/Schedule.swift; sourceTree = "<group>"; };
 		E59D3B5D1C985A8800A7A740 /* UserSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserSetting.swift; path = Souces/UserSetting.swift; sourceTree = "<group>"; };
 		E59D3B611C98607500A7A740 /* ScheduleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleScreen.swift; path = Souces/ScheduleScreen.swift; sourceTree = "<group>"; };
+		E59D3B641C986C2700A7A740 /* TimeSchedulerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSchedulerContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				E5ACBB371C91925800594A40 /* Views */,
 				E5ACBB361C91924B00594A40 /* Models */,
 				E51EE99E1C7AF020003174F0 /* AppDelegate.swift */,
+				E59D3B641C986C2700A7A740 /* TimeSchedulerContext.swift */,
 				E51EE9A01C7AF020003174F0 /* FirstViewController.swift */,
 				E51EE9A21C7AF020003174F0 /* SecondViewController.swift */,
 				E51EE9A41C7AF020003174F0 /* Main.storyboard */,
@@ -252,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E59D3B651C986C2700A7A740 /* TimeSchedulerContext.swift in Sources */,
 				E59D3B5C1C9859E800A7A740 /* Schedule.swift in Sources */,
 				E59D3B581C98547600A7A740 /* Model.swift in Sources */,
 				E51EE9A31C7AF020003174F0 /* SecondViewController.swift in Sources */,
