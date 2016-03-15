@@ -100,8 +100,8 @@
 		E5ACBB361C91924B00594A40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E5ACBB381C91927B00594A40 /* Schedule.swift */,
 				E59D3B571C98547600A7A740 /* Model.swift */,
+				E5ACBB381C91927B00594A40 /* Schedule.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
