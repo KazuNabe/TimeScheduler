@@ -17,6 +17,7 @@
 		E59D3B5A1C98589B00A7A740 /* DayScheduleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B591C98589B00A7A740 /* DayScheduleSet.swift */; };
 		E59D3B5C1C9859E800A7A740 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B5B1C9859E800A7A740 /* Schedule.swift */; };
 		E59D3B5E1C985A8800A7A740 /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B5D1C985A8800A7A740 /* UserSetting.swift */; };
+		E59D3B621C98607500A7A740 /* ScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B611C98607500A7A740 /* ScheduleScreen.swift */; };
 		F35D9C0C0383689B9610CD31 /* Pods_TimeScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1D4066194D73E75BF07817 /* Pods_TimeScheduler.framework */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		E59D3B591C98589B00A7A740 /* DayScheduleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayScheduleSet.swift; path = Souces/DayScheduleSet.swift; sourceTree = "<group>"; };
 		E59D3B5B1C9859E800A7A740 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Souces/Schedule.swift; sourceTree = "<group>"; };
 		E59D3B5D1C985A8800A7A740 /* UserSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserSetting.swift; path = Souces/UserSetting.swift; sourceTree = "<group>"; };
+		E59D3B611C98607500A7A740 /* ScheduleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleScreen.swift; path = Souces/ScheduleScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,9 +103,18 @@
 			path = TimeScheduler;
 			sourceTree = "<group>";
 		};
+		E59D3B5F1C98602C00A7A740 /* ScreenModels */ = {
+			isa = PBXGroup;
+			children = (
+				E59D3B611C98607500A7A740 /* ScheduleScreen.swift */,
+			);
+			name = ScreenModels;
+			sourceTree = "<group>";
+		};
 		E5ACBB361C91924B00594A40 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E59D3B5F1C98602C00A7A740 /* ScreenModels */,
 				E59D3B571C98547600A7A740 /* Model.swift */,
 				E59D3B5B1C9859E800A7A740 /* Schedule.swift */,
 				E59D3B591C98589B00A7A740 /* DayScheduleSet.swift */,
@@ -245,6 +256,7 @@
 				E59D3B581C98547600A7A740 /* Model.swift in Sources */,
 				E51EE9A31C7AF020003174F0 /* SecondViewController.swift in Sources */,
 				E59D3B5E1C985A8800A7A740 /* UserSetting.swift in Sources */,
+				E59D3B621C98607500A7A740 /* ScheduleScreen.swift in Sources */,
 				E59D3B5A1C98589B00A7A740 /* DayScheduleSet.swift in Sources */,
 				E51EE99F1C7AF020003174F0 /* AppDelegate.swift in Sources */,
 				E51EE9A11C7AF020003174F0 /* FirstViewController.swift in Sources */,
