@@ -4,22 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bond.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TimeScheduler.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveFoundation.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>ReactiveUIKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -37,32 +27,22 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3FD63D81D90D3AEDACFA4CB2D7811369</key>
+		<key>4CADFF17CC0F6A024D115570DC837ED9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>88AA764841D2F67C6FA2EF18381B3A08</key>
+		<key>80076C510C29F960587E43C0597ECBD5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>AA2D4F221190337FEC4AE61CD74AEA97</key>
+		<key>B4404B70A98A5876B162AD26745994EB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B34E4D86A28C38B0EAA5BDBC58853879</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C85A745F6432BB3AEBDFECAD813DEC5A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>FD84BBD20EB6C17F7DB654937DC1607F</key>
+		<key>DE8DD787FB20E5EF868E1FE385AFE4AE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
