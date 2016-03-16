@@ -8,10 +8,22 @@
 
 import UIKit
 import RealmSwift
+import ReactiveKit
 
 class ScheduleScreen: NSObject {
-    var currentDaySchedule : DayScheduleSet?
-    var currentScheduleScreenType : ScheduleScreenType = ScheduleScreenType.AllTime
+    var currentDayScheduleSet : ObservableCollection<[DayScheduleSet]>?
+    var currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
     
-    var displaySchedules : [Schedule]?
+    var displaySchedules : ObservableCollection<[Schedule]>?
+    
+    private override init() {}
+    
+    init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
+        currentDayScheduleSet = ObservableCollection(
+            scheduleSetArray.filter{ $0.guid == userSetting.showingIdOfDayScheduleSet })
+        
+        currentScheduleScreenType.next(userSetting.defaultScheduleScreenType)
+        
+        
+    }
 }
