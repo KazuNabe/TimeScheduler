@@ -84,16 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-TimeScheduler/ReactiveFoundation.framework"
-  install_framework "Pods-TimeScheduler/ReactiveKit.framework"
-  install_framework "Pods-TimeScheduler/ReactiveUIKit.framework"
+  install_framework "Pods-TimeScheduler/Bond.framework"
   install_framework "Pods-TimeScheduler/Realm.framework"
   install_framework "Pods-TimeScheduler/RealmSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-TimeScheduler/ReactiveFoundation.framework"
-  install_framework "Pods-TimeScheduler/ReactiveKit.framework"
-  install_framework "Pods-TimeScheduler/ReactiveUIKit.framework"
+  install_framework "Pods-TimeScheduler/Bond.framework"
   install_framework "Pods-TimeScheduler/Realm.framework"
   install_framework "Pods-TimeScheduler/RealmSwift.framework"
 fi
