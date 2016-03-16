@@ -7,22 +7,22 @@
 //
 
 import UIKit
-import ReactiveKit
 import RealmSwift
 
 class TimeSchedulerContext: NSObject {
-    var userSetting    : Observable<UserSetting>?
-    var daySceduleSets : ObservableCollection<[DayScheduleSet]>?
+    var userSetting    : UserSetting?
+    var daySceduleSetCollection : [DayScheduleSet]?
     
     // ForView
-    var scheduleScreen : Observable<ScheduleScreen>?
+    var scheduleScreen : ScheduleScreen?
     
     override init() {
         let realm = try! Realm()
         
         if let tempSetting = realm.objects(UserSetting).first {
-            userSetting = Observable<UserSetting>(tempSetting);
+            userSetting = tempSetting;
         }
         
+        daySceduleSetCollection = realm.objects(DayScheduleSet).map{$0}
     }
 }

@@ -14,12 +14,4 @@ class ScheduleScreen: NSObject {
     var currentScheduleScreenType : ScheduleScreenType = ScheduleScreenType.AllTime
     
     var displaySchedules : [Schedule]?
-    
-    init(setting : UserSetting) {
-        let realm = try! Realm()
-        
-        currentScheduleScreenType = setting.defaultScheduleScreenType
-        currentDaySchedule =
-            realm.objects(DayScheduleSet).filter("guid = \(setting.showingIdOfDayScheduleSet)").first
-    }
 }
