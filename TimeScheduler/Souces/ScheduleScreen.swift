@@ -10,7 +10,7 @@ import UIKit
 import Bond
 
 class ScheduleScreen: NSObject {
-    var currentDayScheduleSet : ObservableArray<[DayScheduleSet]>?
+    var currentDayScheduleSet : Observable<DayScheduleSet>?
     var currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
     
     var displaySchedules : ObservableArray<[Schedule]>?
@@ -18,12 +18,26 @@ class ScheduleScreen: NSObject {
     private override init() {}
     
     init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
-        currentDayScheduleSet = ObservableArray(
-            arrayLiteral: scheduleSetArray.filter {
-                $0.guid == userSetting.showingIdOfDayScheduleSet
-            }
-        )
+        currentDayScheduleSet = Observable(
+            scheduleSetArray.filter {
+                $0.guid == userSetting.showingIdOfDayScheduleSet!
+            }.first!
+        ) ?? Observable(scheduleSetArray.first!)
         
+        currentScheduleScreenType = Observable(userSetting.defaultScheduleScreenType)
         
+//        currentDayScheduleSet?.combineLatestWith(currentScheduleScreenType).map {
+//            scheduleSet, type in
+//            switch type
+//            {
+//            case .AllTime:
+//                return scheduleSet.schedules
+//                
+//            case .AM:
+//                return scheduleSet.schedules.filter {
+//                    return ($0.eventStartTime.
+//                }
+//            }
+//        }
     }
 }
