@@ -5,14 +5,17 @@ PODS:
   - Realm/Headers (0.98.5)
   - RealmSwift (0.98.5):
     - Realm (= 0.98.5)
+  - SwiftDate (2.0.2)
 
 DEPENDENCIES:
   - Bond (~> 4.0)
   - RealmSwift
+  - SwiftDate (~> 2.0)
 
 SPEC CHECKSUMS:
   Bond: ebe2364b18130690083cbceff036420b21494ae4
   Realm: db08379969e45cea2edd1c3c0a090fe9e22d2d2f
   RealmSwift: cb11ad1c35e15dc982f2dbf5afe2a3124193a358
+  SwiftDate: b4f4d0962afe48365ad2800c9850a6626deb9359
 
 COCOAPODS: 0.39.0
