@@ -7,19 +7,23 @@
 //
 
 import UIKit
-//import RealmSwift
-//import ReactiveKit
+import Bond
 
 class ScheduleScreen: NSObject {
-//    var currentDayScheduleSet : ObservableCollection<[DayScheduleSet]>?
-//    var currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
-//    
-//    var displaySchedules : ObservableCollection<[Schedule]>?
-//    
-//    private override init() {}
-//    
-//    init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
-//        currentDayScheduleSet = ObservableCollection(
-//            scheduleSetArray.filter{ $0.guid == userSetting.showingIdOfDayScheduleSet })
-//    }
+    var currentDayScheduleSet : ObservableArray<[DayScheduleSet]>?
+    var currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
+    
+    var displaySchedules : ObservableArray<[Schedule]>?
+    
+    private override init() {}
+    
+    init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
+        currentDayScheduleSet = ObservableArray(
+            arrayLiteral: scheduleSetArray.filter {
+                $0.guid == userSetting.showingIdOfDayScheduleSet
+            }
+        )
+        
+        
+    }
 }
