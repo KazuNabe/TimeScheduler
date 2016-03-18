@@ -8,36 +8,48 @@
 
 import UIKit
 import Bond
+import SwiftDate
 
 class ScheduleScreen: NSObject {
     var currentDayScheduleSet : Observable<DayScheduleSet>?
-    var currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
+    let currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
     
-    var displaySchedules : ObservableArray<[Schedule]>?
+    let displaySchedules : ObservableArray<Schedule> = ObservableArray<Schedule>()
     
     private override init() {}
     
     init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
+        super.init()
+        
         currentDayScheduleSet = Observable(
             scheduleSetArray.filter {
                 $0.guid == userSetting.showingIdOfDayScheduleSet!
             }.first!
         ) ?? Observable(scheduleSetArray.first!)
         
-        currentScheduleScreenType = Observable(userSetting.defaultScheduleScreenType)
+        currentScheduleScreenType.value = userSetting.defaultScheduleScreenType
         
-//        currentDayScheduleSet?.combineLatestWith(currentScheduleScreenType).map {
-//            scheduleSet, type in
-//            switch type
-//            {
-//            case .AllTime:
-//                return scheduleSet.schedules
-//                
-//            case .AM:
-//                return scheduleSet.schedules.filter {
-//                    return ($0.eventStartTime.
-//                }
-//            }
-//        }
+        currentDayScheduleSet?.combineLatestWith(currentScheduleScreenType).observeNew {
+            [unowned self] (scheduleSet, screenType) -> Void in
+            
+            switch screenType
+            {
+            case .AllTime:
+                self.displaySchedules.array = scheduleSet.schedules.map{$0}
+                
+            case .AM:
+                self.displaySchedules.array = scheduleSet.schedules.filter {
+                    $0.eventStartTime?.hour <= 12
+                }
+                
+            case .PM:
+                self.displaySchedules.array = scheduleSet.schedules.filter {
+                    12 <= $0.eventStartTime?.hour || $0.eventEndTime?.hour <= 12
+                }
+                
+            default:
+                break
+            }
+        }
     }
 }

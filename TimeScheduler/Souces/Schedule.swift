@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SwiftDate
 
 class Schedule: Model {
     dynamic var eventTitle : String = ""
