@@ -7,19 +7,49 @@
 //
 
 import UIKit
-//import RealmSwift
-//import ReactiveKit
+import Bond
+import SwiftDate
 
 class ScheduleScreen: NSObject {
-//    var currentDayScheduleSet : ObservableCollection<[DayScheduleSet]>?
-//    var currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
-//    
-//    var displaySchedules : ObservableCollection<[Schedule]>?
-//    
-//    private override init() {}
-//    
-//    init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
-//        currentDayScheduleSet = ObservableCollection(
-//            scheduleSetArray.filter{ $0.guid == userSetting.showingIdOfDayScheduleSet })
-//    }
+    var currentDayScheduleSet : Observable<DayScheduleSet>?
+    let currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
+    
+    let displaySchedules : ObservableArray<Schedule> = ObservableArray<Schedule>()
+    
+    private override init() {}
+    
+    init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
+        super.init()
+        
+        currentDayScheduleSet = Observable(
+            scheduleSetArray.filter {
+                $0.guid == userSetting.showingIdOfDayScheduleSet!
+            }.first!
+        ) ?? Observable(scheduleSetArray.first!)
+        
+        currentScheduleScreenType.value = userSetting.defaultScheduleScreenType
+        
+        currentDayScheduleSet?.combineLatestWith(currentScheduleScreenType).observeNew {
+            [unowned self] (scheduleSet, screenType) -> Void in
+            
+            switch screenType
+            {
+            case .AllTime:
+                self.displaySchedules.array = scheduleSet.schedules.map{$0}
+                
+            case .AM:
+                self.displaySchedules.array = scheduleSet.schedules.filter {
+                    $0.eventStartTime?.hour <= 12
+                }
+                
+            case .PM:
+                self.displaySchedules.array = scheduleSet.schedules.filter {
+                    12 <= $0.eventStartTime?.hour || $0.eventEndTime?.hour <= 12
+                }
+                
+            default:
+                break
+            }
+        }
+    }
 }

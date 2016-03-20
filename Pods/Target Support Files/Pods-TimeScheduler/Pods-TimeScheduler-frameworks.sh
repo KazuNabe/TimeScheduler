@@ -87,9 +87,11 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-TimeScheduler/Bond.framework"
   install_framework "Pods-TimeScheduler/Realm.framework"
   install_framework "Pods-TimeScheduler/RealmSwift.framework"
+  install_framework "Pods-TimeScheduler/SwiftDate.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-TimeScheduler/Bond.framework"
   install_framework "Pods-TimeScheduler/Realm.framework"
   install_framework "Pods-TimeScheduler/RealmSwift.framework"
+  install_framework "Pods-TimeScheduler/SwiftDate.framework"
 fi

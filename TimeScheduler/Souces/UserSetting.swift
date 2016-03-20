@@ -9,6 +9,7 @@
 import UIKit
 
 enum ScheduleScreenType : String {
+    case UNKNOWN = "Unknown"
     case AM = "AM"
     case PM = "PM"
     case ByTimePriod = "ByTimePriod"
