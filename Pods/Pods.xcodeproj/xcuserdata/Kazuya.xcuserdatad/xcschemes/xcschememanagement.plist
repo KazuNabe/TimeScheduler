@@ -8,31 +8,64 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 		<key>Pods-TimeScheduler.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>Realm.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>3</integer>
 		</dict>
 		<key>RealmSwift.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>SwiftDate.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>17A6A6C39B6AAADDFE0E833D6A4315D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4A4252FD62CBCCACACB266F548A8FC49</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>4CADFF17CC0F6A024D115570DC837ED9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>80076C510C29F960587E43C0597ECBD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>81E4D36CADA0AC8B90CD1195EA3074ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9E863F41F30C5B4120BD72886B508BF1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
