@@ -12,6 +12,7 @@
 		E51EE9AB1C7AF020003174F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51EE9A91C7AF020003174F0 /* LaunchScreen.storyboard */; };
 		E53F1F791C99AE1E00283BD4 /* TabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53F1F771C99AE1E00283BD4 /* TabBaseViewController.swift */; };
 		E53F1F7A1C99AE1E00283BD4 /* TabBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E53F1F781C99AE1E00283BD4 /* TabBaseViewController.xib */; };
+		E53F1F7C1C9FFEC400283BD4 /* CircleScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53F1F7B1C9FFEC400283BD4 /* CircleScheduleView.swift */; };
 		E59D3B581C98547600A7A740 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B571C98547600A7A740 /* Model.swift */; };
 		E59D3B5A1C98589B00A7A740 /* DayScheduleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B591C98589B00A7A740 /* DayScheduleSet.swift */; };
 		E59D3B5C1C9859E800A7A740 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B5B1C9859E800A7A740 /* Schedule.swift */; };
@@ -32,6 +33,7 @@
 		E51EE9AC1C7AF020003174F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E53F1F771C99AE1E00283BD4 /* TabBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBaseViewController.swift; sourceTree = "<group>"; };
 		E53F1F781C99AE1E00283BD4 /* TabBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBaseViewController.xib; sourceTree = "<group>"; };
+		E53F1F7B1C9FFEC400283BD4 /* CircleScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleScheduleView.swift; sourceTree = "<group>"; };
 		E59D3B571C98547600A7A740 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Souces/Model.swift; sourceTree = "<group>"; };
 		E59D3B591C98589B00A7A740 /* DayScheduleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayScheduleSet.swift; path = Souces/DayScheduleSet.swift; sourceTree = "<group>"; };
 		E59D3B5B1C9859E800A7A740 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Souces/Schedule.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			children = (
 				E53F1F771C99AE1E00283BD4 /* TabBaseViewController.swift */,
 				E53F1F781C99AE1E00283BD4 /* TabBaseViewController.xib */,
+				E53F1F7B1C9FFEC400283BD4 /* CircleScheduleView.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				E59D3B5A1C98589B00A7A740 /* DayScheduleSet.swift in Sources */,
 				E51EE99F1C7AF020003174F0 /* AppDelegate.swift in Sources */,
 				E53F1F791C99AE1E00283BD4 /* TabBaseViewController.swift in Sources */,
+				E53F1F7C1C9FFEC400283BD4 /* CircleScheduleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
