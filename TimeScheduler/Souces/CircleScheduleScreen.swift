@@ -1,5 +1,5 @@
 //
-//  ScheduleScreen.swift
+//  CircleScheduleScreen.swift
 //  TimeScheduler
 //
 //  Created by Kazuya Watanabe on 2016/03/16.
@@ -11,7 +11,7 @@ import Bond
 import SwiftDate
 import RealmSwift
 
-class ScheduleScreen: NSObject {
+class CircleScheduleScreen: NSObject {
     var currentDayScheduleSet : Observable<DayScheduleSet>?
     let currentScheduleScreenType : Observable<ScheduleScreenType> = Observable(ScheduleScreenType.AllTime)
     

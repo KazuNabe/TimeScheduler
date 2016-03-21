@@ -13,11 +13,12 @@
 		E53F1F791C99AE1E00283BD4 /* TabBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53F1F771C99AE1E00283BD4 /* TabBaseViewController.swift */; };
 		E53F1F7A1C99AE1E00283BD4 /* TabBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E53F1F781C99AE1E00283BD4 /* TabBaseViewController.xib */; };
 		E53F1F7C1C9FFEC400283BD4 /* CircleScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53F1F7B1C9FFEC400283BD4 /* CircleScheduleView.swift */; };
+		E53F1F7E1C9FFFDC00283BD4 /* CircleSchduelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E53F1F7D1C9FFFDC00283BD4 /* CircleSchduelViewModel.swift */; };
 		E59D3B581C98547600A7A740 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B571C98547600A7A740 /* Model.swift */; };
 		E59D3B5A1C98589B00A7A740 /* DayScheduleSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B591C98589B00A7A740 /* DayScheduleSet.swift */; };
 		E59D3B5C1C9859E800A7A740 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B5B1C9859E800A7A740 /* Schedule.swift */; };
 		E59D3B5E1C985A8800A7A740 /* UserSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B5D1C985A8800A7A740 /* UserSetting.swift */; };
-		E59D3B621C98607500A7A740 /* ScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B611C98607500A7A740 /* ScheduleScreen.swift */; };
+		E59D3B621C98607500A7A740 /* CircleScheduleScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B611C98607500A7A740 /* CircleScheduleScreen.swift */; };
 		E59D3B651C986C2700A7A740 /* TimeSchedulerContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59D3B641C986C2700A7A740 /* TimeSchedulerContext.swift */; };
 		F35D9C0C0383689B9610CD31 /* Pods_TimeScheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB1D4066194D73E75BF07817 /* Pods_TimeScheduler.framework */; };
 /* End PBXBuildFile section */
@@ -34,11 +35,12 @@
 		E53F1F771C99AE1E00283BD4 /* TabBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBaseViewController.swift; sourceTree = "<group>"; };
 		E53F1F781C99AE1E00283BD4 /* TabBaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TabBaseViewController.xib; sourceTree = "<group>"; };
 		E53F1F7B1C9FFEC400283BD4 /* CircleScheduleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleScheduleView.swift; sourceTree = "<group>"; };
+		E53F1F7D1C9FFFDC00283BD4 /* CircleSchduelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleSchduelViewModel.swift; sourceTree = "<group>"; };
 		E59D3B571C98547600A7A740 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Model.swift; path = Souces/Model.swift; sourceTree = "<group>"; };
 		E59D3B591C98589B00A7A740 /* DayScheduleSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DayScheduleSet.swift; path = Souces/DayScheduleSet.swift; sourceTree = "<group>"; };
 		E59D3B5B1C9859E800A7A740 /* Schedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Schedule.swift; path = Souces/Schedule.swift; sourceTree = "<group>"; };
 		E59D3B5D1C985A8800A7A740 /* UserSetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserSetting.swift; path = Souces/UserSetting.swift; sourceTree = "<group>"; };
-		E59D3B611C98607500A7A740 /* ScheduleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ScheduleScreen.swift; path = Souces/ScheduleScreen.swift; sourceTree = "<group>"; };
+		E59D3B611C98607500A7A740 /* CircleScheduleScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CircleScheduleScreen.swift; path = Souces/CircleScheduleScreen.swift; sourceTree = "<group>"; };
 		E59D3B641C986C2700A7A740 /* TimeSchedulerContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeSchedulerContext.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +116,7 @@
 		E59D3B5F1C98602C00A7A740 /* ScreenModels */ = {
 			isa = PBXGroup;
 			children = (
-				E59D3B611C98607500A7A740 /* ScheduleScreen.swift */,
+				E59D3B611C98607500A7A740 /* CircleScheduleScreen.swift */,
 			);
 			name = ScreenModels;
 			sourceTree = "<group>";
@@ -137,6 +139,7 @@
 				E53F1F771C99AE1E00283BD4 /* TabBaseViewController.swift */,
 				E53F1F781C99AE1E00283BD4 /* TabBaseViewController.xib */,
 				E53F1F7B1C9FFEC400283BD4 /* CircleScheduleView.swift */,
+				E53F1F7D1C9FFFDC00283BD4 /* CircleSchduelViewModel.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -265,10 +268,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E59D3B651C986C2700A7A740 /* TimeSchedulerContext.swift in Sources */,
+				E53F1F7E1C9FFFDC00283BD4 /* CircleSchduelViewModel.swift in Sources */,
 				E59D3B5C1C9859E800A7A740 /* Schedule.swift in Sources */,
 				E59D3B581C98547600A7A740 /* Model.swift in Sources */,
 				E59D3B5E1C985A8800A7A740 /* UserSetting.swift in Sources */,
-				E59D3B621C98607500A7A740 /* ScheduleScreen.swift in Sources */,
+				E59D3B621C98607500A7A740 /* CircleScheduleScreen.swift in Sources */,
 				E59D3B5A1C98589B00A7A740 /* DayScheduleSet.swift in Sources */,
 				E51EE99F1C7AF020003174F0 /* AppDelegate.swift in Sources */,
 				E53F1F791C99AE1E00283BD4 /* TabBaseViewController.swift in Sources */,
