@@ -9,6 +9,7 @@
 import UIKit
 import Bond
 import SwiftDate
+import RealmSwift
 
 class ScheduleScreen: NSObject {
     var currentDayScheduleSet : Observable<DayScheduleSet>?
@@ -18,7 +19,7 @@ class ScheduleScreen: NSObject {
     
     private override init() {}
     
-    init(scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
+    init(inout scheduleSetArray : [DayScheduleSet], userSetting : UserSetting) {
         super.init()
         
         currentDayScheduleSet = Observable(

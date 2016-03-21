@@ -11,18 +11,33 @@ import RealmSwift
 
 class TimeSchedulerContext: NSObject {
     var userSetting    : UserSetting?
-    var daySceduleSetCollection : [DayScheduleSet]?
+    var daySceduleSetArray : [DayScheduleSet]?
     
     // ForView
     var scheduleScreen : ScheduleScreen?
     
     override init() {
+        super.init()
+        
         let realm = try! Realm()
         
         if let tempSetting = realm.objects(UserSetting).first {
             userSetting = tempSetting;
         }
+        else
+        {
+            userSetting = UserSetting.create()
+            try! realm.write {
+                realm.add(userSetting!)
+            }
+        }
         
-        daySceduleSetCollection = realm.objects(DayScheduleSet).map{$0}
+        daySceduleSetArray = realm.objects(DayScheduleSet).map{$0}
+        if (daySceduleSetArray?.count <= 0)
+        {
+            let dayScheduleSet = DayScheduleSet()
+            realm.add(dayScheduleSet)
+            daySceduleSetArray?.append(dayScheduleSet)
+        }
     }
 }
