@@ -17,7 +17,7 @@ enum ScheduleScreenType : String {
 }
 
 class UserSetting: Model {
-    dynamic var showingIdOfDayScheduleSet : String?
+    dynamic var defaultDayScheduleSetId : String?
     private dynamic var defaultScheduleScreenTypeOfLocal = ScheduleScreenType.AllTime.rawValue
     var defaultScheduleScreenType : ScheduleScreenType {
         get {

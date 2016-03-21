@@ -24,7 +24,7 @@ class CircleScheduleScreen: NSObject {
         
         currentDayScheduleSet = Observable(
             scheduleSetArray.filter {
-                $0.guid == userSetting.showingIdOfDayScheduleSet!
+                $0.guid == userSetting.defaultDayScheduleSetId!
             }.first!
         ) ?? Observable(scheduleSetArray.first!)
         

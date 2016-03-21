@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var rootNavigationController : UINavigationController?
-    let timeSchedulerContext = TimeSchedulerContext()
+    static let timeSchedulerContext = TimeSchedulerContext()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
