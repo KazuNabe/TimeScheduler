@@ -17,7 +17,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
-        let baseViewController: TabBaseViewController = TabBaseViewController()
+        // TODO : Viewを変える
+        let baseViewController = CircleScheduleViewController()
         rootNavigationController = UINavigationController(rootViewController: baseViewController)
         
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)

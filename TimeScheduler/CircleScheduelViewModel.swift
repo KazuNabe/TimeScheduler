@@ -1,5 +1,5 @@
 //
-//  CircleSchduelViewModel.swift
+//  CircleScheduelViewModel.swift
 //  TimeScheduler
 //
 //  Created by Kazuya Watanabe on 2016/03/21.
@@ -9,22 +9,23 @@
 import UIKit
 import Bond
 
-class CircleSchduelViewModel: NSObject {
+class CircleScheduelViewModel: NSObject {
     var currentScheduleScreenType : Observable<ScheduleScreenType>?
-    
     var displaySchedules : ObservableArray<Schedule>?
     
-    override init() {
+    private override init() {}
+    
+    init(context : TimeSchedulerContext) {
         super.init()
         
-        if AppDelegate.timeSchedulerContext.circleScheduleScreen == nil {
-            AppDelegate.timeSchedulerContext.circleScheduleScreen = CircleScheduleScreen(
-                scheduleSetArray: &AppDelegate.timeSchedulerContext.daySceduleSetArray!,
-                userSetting: AppDelegate.timeSchedulerContext.userSetting!
+        if context.circleScheduleScreen == nil {
+            context.circleScheduleScreen = CircleScheduleScreen(
+                scheduleSetArray: &context.daySceduleSetArray!,
+                userSetting: context.userSetting!
             )
         }
         
-        let circleScheduleScreen = AppDelegate.timeSchedulerContext.circleScheduleScreen;
+        let circleScheduleScreen = context.circleScheduleScreen;
         
         currentScheduleScreenType = circleScheduleScreen?.currentScheduleScreenType
         displaySchedules = circleScheduleScreen?.displaySchedules
