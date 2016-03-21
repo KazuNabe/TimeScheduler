@@ -9,12 +9,12 @@
 import UIKit
 
 class CircleScheduleViewController: UIViewController {
-    var circleSchduleViewModel : CircleSchduelViewModel?
+    var circleSchduleViewModel : CircleScheduelViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        circleSchduleViewModel = CircleSchduelViewModel(context: AppDelegate.timeSchedulerContext)
+        circleSchduleViewModel = CircleScheduelViewModel(context: AppDelegate.timeSchedulerContext)
     }
 
     override func didReceiveMemoryWarning() {
