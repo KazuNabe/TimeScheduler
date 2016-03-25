@@ -10,6 +10,14 @@ import UIKit
 
 class TabBaseViewController: UIViewController {
 
+    @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var menuTabBar: UITabBar!
+    @IBOutlet weak var allDayTabBarItem: UITabBarItem!
+    @IBOutlet weak var amTabBarItem: UITabBarItem!
+    @IBOutlet weak var pmTabBarItem: UITabBarItem!
+    @IBOutlet weak var settingsTabBarItem: UITabBarItem!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
