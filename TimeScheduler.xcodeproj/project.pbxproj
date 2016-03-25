@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E1564D01CA4DC0700C14219 /* TabBaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1564CF1CA4DC0700C14219 /* TabBaseViewModel.swift */; };
+		6E1564D21CA4E11B00C14219 /* TabBaseScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E1564D11CA4E11B00C14219 /* TabBaseScreen.swift */; };
 		E51EE99F1C7AF020003174F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E51EE99E1C7AF020003174F0 /* AppDelegate.swift */; };
 		E51EE9A81C7AF020003174F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E51EE9A71C7AF020003174F0 /* Assets.xcassets */; };
 		E51EE9AB1C7AF020003174F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E51EE9A91C7AF020003174F0 /* LaunchScreen.storyboard */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6E1564CF1CA4DC0700C14219 /* TabBaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBaseViewModel.swift; sourceTree = "<group>"; };
+		6E1564D11CA4E11B00C14219 /* TabBaseScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBaseScreen.swift; sourceTree = "<group>"; };
 		9811456EDDDA3E79FF7570BB /* Pods-TimeScheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeScheduler.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeScheduler/Pods-TimeScheduler.release.xcconfig"; sourceTree = "<group>"; };
 		D52672BA4FBD26C15A00B121 /* Pods-TimeScheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeScheduler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeScheduler/Pods-TimeScheduler.debug.xcconfig"; sourceTree = "<group>"; };
 		DB1D4066194D73E75BF07817 /* Pods_TimeScheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeScheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +135,7 @@
 		E59D3B5F1C98602C00A7A740 /* ScreenModels */ = {
 			isa = PBXGroup;
 			children = (
+				6E1564D11CA4E11B00C14219 /* TabBaseScreen.swift */,
 				E59D3B611C98607500A7A740 /* CircleScheduleScreen.swift */,
 			);
 			name = ScreenModels;
@@ -153,6 +158,7 @@
 			children = (
 				E53F1F771C99AE1E00283BD4 /* TabBaseViewController.swift */,
 				E53F1F781C99AE1E00283BD4 /* TabBaseViewController.xib */,
+				6E1564CF1CA4DC0700C14219 /* TabBaseViewModel.swift */,
 				E53F1F831CA0158200283BD4 /* CircleSchdule */,
 			);
 			name = Views;
@@ -292,7 +298,9 @@
 				E59D3B5A1C98589B00A7A740 /* DayScheduleSet.swift in Sources */,
 				E51EE99F1C7AF020003174F0 /* AppDelegate.swift in Sources */,
 				E53F1F791C99AE1E00283BD4 /* TabBaseViewController.swift in Sources */,
+				6E1564D21CA4E11B00C14219 /* TabBaseScreen.swift in Sources */,
 				E53F1F7C1C9FFEC400283BD4 /* CircleScheduleView.swift in Sources */,
+				6E1564D01CA4DC0700C14219 /* TabBaseViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

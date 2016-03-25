@@ -10,6 +10,8 @@ import UIKit
 import Bond
 
 class CircleScheduelViewModel: NSObject {
+    let disposeBag : DisposeBag = DisposeBag()
+    
     var currentScheduleScreenType : Observable<ScheduleScreenType>?
     var displaySchedules : ObservableArray<Schedule>?
     
