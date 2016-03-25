@@ -9,6 +9,8 @@
 import UIKit
 import RealmSwift
 
+let timeSchedulerContext = TimeSchedulerContext()
+
 class TimeSchedulerContext: NSObject {
     var userSetting    : UserSetting?
     var daySceduleSetArray : [DayScheduleSet]?
